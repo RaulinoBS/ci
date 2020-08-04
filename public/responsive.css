@@ -1,0 +1,99 @@
+@media (max-width:880px) {
+    #container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        max-width: 800px;
+    }
+
+    #intro p,
+    #intro .description {
+        margin-bottom: 1.25rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+
+    #last-ideas {
+        display: none;
+    }
+
+    #page-ideas header {
+        flex-direction: column-reverse;
+    }
+
+    #page-ideas nav {
+        position: fixed;
+        height: 3rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        margin-top: 0;
+        margin-bottom: 2rem;
+        justify-content: space-around;
+    }
+
+    #page-ideas nav li a.button {
+        width: auto;
+    }
+
+    #page-ideas nav li a.button:hover {
+        color: white;
+        background-color: var(--primary-color);
+        text-decoration: underline;
+    }
+
+    .logo {
+        align-self: center;
+        margin-top: 2rem;
+    }
+
+    #page-ideas #ideas {
+        padding: 0;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #page-ideas .idea {
+        width: 90vw;
+        margin: auto;
+    }
+
+    #page-ideas #title,
+    #page-ideas #ideas,
+    #page-ideas footer {
+        margin-top: 2rem;
+    }
+
+    #modal .content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:660px) {
+    #modal form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #modal .content {
+        margin: 2vh 0;
+        width: 90vw;
+    }
+
+    div form #backbutton {
+        position: absolute;
+        top: -20px;
+        right: 15px;
+        width: 2rem;
+        height: 2rem;
+        color:black;
+    }
+
+    div form #backbutton::after{
+        content: "x";
+    }
+}

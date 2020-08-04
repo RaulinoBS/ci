@@ -1,0 +1,68 @@
+<div id="modal" class="hide">
+  <div class="content">
+
+    <h1>Nova Ideia</h1>
+    <form action="/" method="POST" onsubmit="return checkFields(event)">
+
+      <div class="input-wrapper">
+        <label for="title">Título da ideia</label>
+        <input type="text" name="title">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="category">Categoria</label>
+        <input type="text" name="category">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="link">Link da ideia</label>
+        <input type="url" name="link">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="description">Digite aqui uma descriçãopara essa ideia</label>
+        <textarea name="description" cols="120" rows="5"></textarea>
+      </div>
+
+      <div class="input-wrapper img">
+        {# <label for="image">Link da imagem</label> #}
+        {# <input type="url" name="image"> #}
+        <div id="modal-form" class="hide">
+          <h2>Escolha uma imagem:</h2>
+          <div class="img-select">
+            <li>
+              <img src="https://image.flaticon.com/icons/svg/2737/2737588.svg" alt="videos">
+            </li>
+            <li>
+              <img src="https://image.flaticon.com/icons/svg/2737/2737379.svg" alt="jogos">
+            </li>
+            <li>
+              <img src="https://image.flaticon.com/icons/svg/2737/2737385.svg" alt="estudos">
+            </li>
+            <li>
+              <img src="https://image.flaticon.com/icons/svg/2737/2737499.svg" alt="culinaria">
+            </li>
+            <li>
+              <img src="https://image.flaticon.com/icons/svg/2737/2737393.svg" alt="musica">
+            </li>
+            <li>
+              <img src="https://image.flaticon.com/icons/svg/2737/2737405.svg" alt="cuidados com a casa">
+            </li>
+            <input type="hidden" name="image" value="https://image.flaticon.com/icons/svg/2737/2737588.svg">
+          </div>
+        </div>
+        <div class="btnimg">
+          <a href='#' onclick="onOff('#modal-form')">
+            <span>Escolher imagem:</span>
+            <img id="show" src="https://image.flaticon.com/icons/svg/2737/2737588.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <a href="#" id="backbutton" onclick="onOff('#modal')"></a>
+      <button>Salvar</button>
+
+    </form>
+
+  </div>
+</div>
